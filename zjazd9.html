@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>  
+  	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Čenkovice – live streaming">
+	<title>Čenkovice – live streaming</title>
+	<script type="text/javascript" src="assets/jquery.min.js"></script>
+	<link rel="stylesheet" href="assets/bs/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="mail.css">
+	<link rel="stylesheet" type="text/css" href="assets/video.css">
+	<link rel="stylesheet" type="text/css" href="assets/footer.css">
+	<script src="assets/bs/moment.js"></script>
+	<script src="assets/bs/bootstrap.js"></script>
+    <link href="assets/nowy.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" href="fontawesome/css/font-awesome.css">
+  <style>
+  @media only screen and (max-width: 768px) {
+    /* #player {
+      max-width:320px;
+      max-height:200px;
+    } */
+    .sizer {
+      max-width:320px !important;
+    }
+    #player {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; 
+    height: 0; 
+    overflow: hidden;
+}
+
+#player iframe,
+#player object,
+#player embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+}
+  </style>
+  </head>
+  <body>
+   <div class="margin-video" style="text-align:center;">
+   <div id="player">
+   <iframe  id="ytplayer" 
+			type="text/html" 
+			width="640" 
+			height="360" 
+			src="https://www.youtube.com/embed/live_stream?channel=UCAGycdIr2tGCm39Bu55wXWg"
+			frameborder="0" 
+			allow="autoplay; encrypted-media" 
+			allowfullscreen="allowfullscreen"
+			mozallowfullscreen="mozallowfullscreen" 
+			msallowfullscreen="msallowfullscreen" 
+			oallowfullscreen="oallowfullscreen" 
+			webkitallowfullscreen="webkitallowfullscreen">
+	</iframe>
+  </div>
+  </div>
+<div class="col-sm-2">
+</div></div>
+	
+ 
+  </body>
+</html>
